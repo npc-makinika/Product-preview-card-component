@@ -1,0 +1,181 @@
+body {
+   /* background-color: hsl(30, 38%, 92%); */
+   background-color: #F2EBE3;
+}
+
+button {
+    color: #FEFEFA;
+    background-color: #36745D;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    width: 233px;
+    height: 47px;
+    margin-bottom: 27px;
+}
+
+button::before {
+    content: url('images/icon-cart.svg'); /* inserting icon */
+    color: hsl(30, 38%, 92%);
+    display: inline-block;
+    width: 20px; /* Adjust icon width as needed */
+    height: 20px; /* Adjust icon height as needed */
+    margin-right: 5px; /* Adjust spacing between icon and text */
+    position: relative; /* Ensure positioning is relative to the button */
+    top: 3px; /* Adjust vertical position */
+}
+
+
+button:hover {
+    background-color:#194230;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
+   /* color:#F8F8FF; */
+    color: #FFDEAD;
+    cursor: pointer; /* Pointer/hand icon */
+}
+
+
+header {
+  /*  color: hsl(212, 21%, 14%); */
+    color: #1D222A;
+    font-family: "Fraunces", serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+img {
+    max-width: 100%; /* Ensures the image doesn't exceed its container width */
+    max-height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.attribution {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    display: flex; /* Flexbox layout: Displays children in a flexible container */
+    flex-wrap: wrap; /* Allows wrapping of flex items within the container */
+    justify-content: center; /* Centers flex items along the main axis */
+    margin-top: 237px;
+}
+
+.content-pic {
+    filter: brightness(95%);
+    max-width: 299px;
+    max-height: 447px;
+}
+
+
+
+.new-price {
+   /* color: hsl(158, 36%, 37%); */
+    color: #3C7E6A;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 29px;
+    margin-bottom: 24px;
+}
+
+.old-price {
+   /* color: hsl(228, 12%, 48%); */
+    color: #6C718B;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 18px;
+    position: relative;
+    top: -7px;
+    text-decoration: line-through;
+}
+
+.product-description {
+   /* background-color: #fefeff;*/
+    background-color:#FEFFFC;
+    width: 301px;
+    height: 447px;
+    border-radius: 0 10px 10px 0;
+    margin-left: -2px;
+}
+
+.product-detail {
+   /* color: hsl(228, 12%, 48%); */
+    color: #6B718A;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.product-type {
+   /* color: hsl(228, 12%, 48%); */
+    color: #6C7289;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+
+.text-area {
+    width: 239px;
+    height: 313px;
+    margin: 30px 35px auto 27px;
+}
+
+/* Media query for mobile view */
+@media (max-width: 767px) {
+    button {
+        width: 292px;
+        height: 48px;
+        position: relative;
+        top: 0px;
+    }
+
+    .content {
+        margin-top: 51px;
+    }
+
+    .content-pic {
+        max-width: 343px;
+    }
+
+    img {
+        border-radius: 10px 10px 0px 0px;
+        content: url('images/image-product-mobile.jpg'); /*to change img in mobile view from desktop view*/
+    }
+
+
+    .product-description {
+        border-radius: 0px 0px 10px 10px;
+        margin-top: -5px;
+        width: 343px;
+        height: 413px;
+    }
+
+    .text-area {
+        width: 295px;
+        height: 373px;
+        margin-left: 24px;
+    }
+    
+    .product-detail {
+        font-size: 15px;
+    }
+
+
+    .product-type {
+        font-size: 13.28px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+      display: none; /* Hides the footer */
+    }
+}
