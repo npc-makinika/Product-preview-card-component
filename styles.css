@@ -41,6 +41,7 @@ h1 {
     font-family: "Fraunces", serif;
     font-size: 32px;
     font-weight: 700;
+    line-height: 1em;
 }
 
 
@@ -124,7 +125,7 @@ img {
 
 .text-area {
     width: 239px;
-    height: 313px;
+    height: 319px;
     margin: 30px 35px auto 27px;
 }
 
